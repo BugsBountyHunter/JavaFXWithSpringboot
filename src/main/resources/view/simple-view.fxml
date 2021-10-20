@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ahmedsr.javafxwithspringboot.uicontroller.SimpleController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+        <children>
+
+            <Label fx:id="serviceLbl" text="Service Status: ">
+                <font>
+                    <Font name="System Bold" size="12.0" />
+                </font>
+            </Label>
+            <Label fx:id="serviceStatusLbl" layoutX="10.0" layoutY="10.0" text="Running">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Label>
+        </children>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+        <children>
+            <Button alignment="CENTER" onAction="#onStartButtonClick" prefWidth="80" text="Start" textAlignment="CENTER">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" onAction="#onStopButtonClick" prefWidth="80" text="Stop">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </Button>
+        </children>
+    </HBox>
+    <Label text="Copyright ® 2022" />
+</VBox>
